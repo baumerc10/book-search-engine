@@ -40,9 +40,9 @@ type Auth {
 type Mutation {
     login(email: String!, password: String!): Auth
     addUser(username: String!, email: String!, password: String!): Auth
-    saveBook(input: bookInput): User
+    saveBook(input: savedBook!): User
     removeBook(bookId: String!): User
 }
 `;
 
-modeule.exports = typeDefs;
+module.exports = typeDefs;
